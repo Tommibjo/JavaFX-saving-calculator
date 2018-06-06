@@ -1,6 +1,5 @@
 package sovellus;
 
-import java.util.HashMap;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.chart.LineChart;
@@ -116,10 +115,5 @@ public class SaastolaskuriSovellus extends Application {
 
     public static void main(String[] args) {
         launch(SaastolaskuriSovellus.class);
-    }
-
-    private static double round(double value, int precision) {
-        int scale = (int) Math.pow(10, precision);
-        return (double) Math.round(value * scale) / scale;
     }
 }
